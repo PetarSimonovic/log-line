@@ -29,6 +29,15 @@ describe("Prompt", function() {
     expect(prompt.pickVerbThirdPerson()).toBe("destroys");
   });
 
+  it("should use the correct article for a noun", function () {
+    expect(prompt.setArticle("alligator")).toBe("an alligator");
+  });
+
+  it("should use the article for a consonant noun", function () {
+    expect(prompt.setArticle("turkey")).toBe("a turkey");
+  });
+
+
 
 
   // it("should assign a word from posAdjBank array to the posAdj_1 variable", function () {

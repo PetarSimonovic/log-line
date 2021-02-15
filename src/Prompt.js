@@ -19,7 +19,7 @@ class Prompt {
   };
 
   pickNegAdj() {
-    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant"];
+    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated"];
     let negAdj = negAdjBank[this.makeChoice(negAdjBank)];
     console.log(negAdj)
     return negAdj
@@ -43,8 +43,19 @@ class Prompt {
     return verbTP
   };
 
+  setArticle(word) {
+    let vowels = ["a", "e", "i", "o", "u"]
+    let letter = word.charAt(0)
+    if (vowels.includes(letter)) {
+      return `an ${word}`
+    }
+    else {
+      return `a ${word}`
+    }
+  }
+
 
   constructLogLine() {
-    return `A ${this.pickPosAdj()} but ${this.pickNegAdj()} ${this.pickNoun()} must ${this.pickVerbFirstPerson()} a ${this.pickPosAdj()} ${this.pickNoun()} before a ${this.pickNegAdj()} ${this.pickNoun()} ${this.pickVerbThirdPerson()} a ${this.pickNoun()}`
+    return `A ${this.pickPosAdj()} but ${this.pickNegAdj()} ${this.pickNoun()} must ${this.pickVerbFirstPerson()} ${this.setArticle(this.pickPosAdj())} ${this.pickNoun()} before ${this.setArticle(this.pickNegAdj())} ${this.pickNoun()} ${this.pickVerbThirdPerson()} a ${this.pickNoun()}`
   };
 }
