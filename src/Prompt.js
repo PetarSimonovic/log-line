@@ -12,33 +12,33 @@ class Prompt {
   }
 
   pickPosAdj() {
-    let posAdjBank = ["happy"];
+    let posAdjBank = ["happy", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical"];
     let posAdj = posAdjBank[this.makeChoice(posAdjBank)];
     console.log(posAdj)
     return posAdj
   };
 
   pickNegAdj() {
-    let negAdjBank = ["lazy"];
+    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant"];
     let negAdj = negAdjBank[this.makeChoice(negAdjBank)];
     console.log(negAdj)
     return negAdj
   };
 
   pickNoun() {
-    let nounBank = ["computer"];
+    let nounBank = ["computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck"];
     let noun = nounBank[this.makeChoice(nounBank)];
     return noun
   };
 
   pickVerbFirstPerson() {
-    let verbBankFP = ["rescue"];
+    let verbBankFP = ["rescue", "thank", "serenade", "create", "read", "teach"];
     let verbFP = verbBankFP[this.makeChoice(verbBankFP)];
     return verbFP
   };
 
   pickVerbThirdPerson() {
-    let verbBankTP = ["destroys"];
+    let verbBankTP = ["destroys", "ruins", "surrenders to", "breaks", "threatens", "insults", "cajoles"];
     let verbTP = verbBankTP[this.makeChoice(verbBankTP)];
     return verbTP
   };

@@ -5,6 +5,7 @@ describe("Prompt", function() {
 
   beforeEach(function() {
     prompt = new Prompt();
+    spyOn(prompt,'makeChoice').and.returnValue(0);
   });
 
   it("should pick a positive adjective from the posAdjBank array", function () {
