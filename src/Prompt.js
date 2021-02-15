@@ -32,13 +32,13 @@ class Prompt {
   };
 
   pickVerbFirstPerson() {
-    let verbBankFP = ["rescue", "thank", "serenade", "create", "read", "teach"];
+    let verbBankFP = ["rescue", "thank", "serenade", "create", "read", "teach", "help", "cheer up", "console", "hug", "understand", "vindicate", "defend", "find", "free", "cooperate with"];
     let verbFP = verbBankFP[this.makeChoice(verbBankFP)];
     return verbFP
   };
 
   pickVerbThirdPerson() {
-    let verbBankTP = ["destroys", "ruins", "surrenders to", "breaks", "threatens", "insults", "cajoles"];
+    let verbBankTP = ["destroys", "ruins", "surrenders to", "breaks", "threatens", "insults", "cajoles", "murders", "robs", "ignores", "fights", "attacks", "hurts", "upsets", "drains", "vandalises", "truncates", "annoys"];
     let verbTP = verbBankTP[this.makeChoice(verbBankTP)];
     return verbTP
   };
