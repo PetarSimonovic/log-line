@@ -12,21 +12,21 @@ class Prompt {
   }
 
   pickPosAdj() {
-    let posAdjBank = ["happy", "sentient", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical", "organised", "chic", "fashionable", "intelligent", "smart", "harmonious", "famous", "generous", "fun", "funny", "traditional"];
+    let posAdjBank = ["happy", "sentient", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical", "organised", "chic", "fashionable", "intelligent", "smart", "harmonious", "famous", "generous", "fun", "funny", "traditional", "honest", "bright", "adventurous", "easygoing", "chilled out", "considerate", "loyal", "sincere", "sympathetic"];
     let posAdj = posAdjBank[this.makeChoice(posAdjBank)];
     console.log(posAdj)
     return posAdj
   };
 
   pickNegAdj() {
-    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated", "sleepy", "boring", "bored", "bumbling", "clumsy", "evil", "satanic", "disenchanted", "boorish", "vulgar", "unfashionable", "moaning", "aggressive", "belligerent", "hostile"];
+    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated", "sleepy", "boring", "bored", "bumbling", "clumsy", "evil", "satanic", "disenchanted", "boorish", "vulgar", "unfashionable", "moaning", "aggressive", "belligerent", "hostile", "cruel", "repressed", "uptight"];
     let negAdj = negAdjBank[this.makeChoice(negAdjBank)];
     console.log(negAdj)
     return negAdj
   };
 
   pickNoun() {
-    let nounBank = ["computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "rapper", "singer", "planet", "book", "engineer", "werewolf"];
+    let nounBank = ["computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "electronic musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza"];
     let noun = nounBank[this.makeChoice(nounBank)];
     return noun
   };
@@ -50,7 +50,7 @@ class Prompt {
   }
 
   pickExcuse() {
-  let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "missed your dinner party", "ate all of the cake", "sold your record collection", "threw away your hat"];
+  let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "missed your dinner party", "ate all of the cake", "sold your record collection", "threw away your hat", "fell asleep while you were talking", "interrupted you"];
   let excuse = excuseBank[this.makeChoice(excuseBank)];
   return excuse
   };
@@ -72,6 +72,6 @@ class Prompt {
   };
 
   constructExcuse() {
-    return `Sorry I ${this.pickExcuse()} but I had to ${this.pickVerbFirstPerson()} ${this.setArticle(this.pickPosAdj())} ${this.pickNoun()} before ${this.setArticle(this.pickNegAdj())} ${this.pickNoun()} ${this.pickVerbPastTense()} ${this.setArticle(this.pickNoun())}`
+    return `Sorry I ${this.pickExcuse()} but I had to ${this.pickVerbFirstPerson()} ${this.setArticle(this.pickPosAdj())} ${this.pickNoun()} because ${this.setArticle(this.pickNegAdj())} ${this.pickNoun()} ${this.pickVerbPastTense()} ${this.setArticle(this.pickNoun())}`
   };
 }
