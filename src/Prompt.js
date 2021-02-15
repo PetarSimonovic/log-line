@@ -7,53 +7,40 @@ class Prompt {
   this.negAdj_2 = "testNegAdj";
 };
 
-  assignPosAdj_1() {
-    return this.pickPosAdj();
+  makeChoice(bank) {
+    return Math.floor(Math.random() * bank.length);
   }
 
   pickPosAdj() {
     let posAdjBank = ["happy"];
-    let choice = Math.floor(Math.random() * posAdjBank.length);
-    console.log(choice);
-    let posAdj = posAdjBank[choice];
+    let posAdj = posAdjBank[this.makeChoice(posAdjBank)];
     console.log(posAdj)
     return posAdj
   };
 
   pickNegAdj() {
     let negAdjBank = ["lazy"];
-    let choice = Math.floor(Math.random() * negAdjBank.length);
-    console.log(choice);
-    let negAdj = negAdjBank[choice];
+    let negAdj = negAdjBank[this.makeChoice(negAdjBank)];
     console.log(negAdj)
     return negAdj
   };
 
   pickNoun() {
     let nounBank = ["computer"];
-    let choice = Math.floor(Math.random() * nounBank.length);
-    console.log(choice);
-    let noun = nounBank[choice];
-    console.log(noun)
+    let noun = nounBank[this.makeChoice(nounBank)];
     return noun
   };
 
   pickVerbFirstPerson() {
-    let verbBank = ["rescue"];
-    let choice = Math.floor(Math.random() * verbBank.length);
-    console.log(choice);
-    let verb = verbBank[choice];
-    console.log(verb)
-    return verb
+    let verbBankFP = ["rescue"];
+    let verbFP = verbBankFP[this.makeChoice(verbBankFP)];
+    return verbFP
   };
 
   pickVerbThirdPerson() {
-    let verbBank = ["destroys"];
-    let choice = Math.floor(Math.random() * verbBank.length);
-    console.log(choice);
-    let verb = verbBank[choice];
-    console.log(verb)
-    return verb
+    let verbBankTP = ["destroys"];
+    let verbTP = verbBankTP[this.makeChoice(verbBankTP)];
+    return verbTP
   };
 
 
