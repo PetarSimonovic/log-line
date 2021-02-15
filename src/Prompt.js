@@ -12,21 +12,21 @@ class Prompt {
   }
 
   pickPosAdj() {
-    let posAdjBank = ["happy", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical"];
+    let posAdjBank = ["happy", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical", "orgnaised", "chic", "fashionable", "intelligent", "smart", "harmonious", "famous", "generous", "fun", "funny", "traditional"];
     let posAdj = posAdjBank[this.makeChoice(posAdjBank)];
     console.log(posAdj)
     return posAdj
   };
 
   pickNegAdj() {
-    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated"];
+    let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated", "sleepy", "boring", "bored", "bumbling", "clumsy", "evil", "satanic", "disenchanted", "borish", "vulgar"];
     let negAdj = negAdjBank[this.makeChoice(negAdjBank)];
     console.log(negAdj)
     return negAdj
   };
 
   pickNoun() {
-    let nounBank = ["computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck"];
+    let nounBank = ["computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "rapper", "singer", "engineer"];
     let noun = nounBank[this.makeChoice(nounBank)];
     return noun
   };
@@ -54,8 +54,8 @@ class Prompt {
     }
   }
 
-
   constructLogLine() {
-    return `A ${this.pickPosAdj()} but ${this.pickNegAdj()} ${this.pickNoun()} must ${this.pickVerbFirstPerson()} ${this.setArticle(this.pickPosAdj())} ${this.pickNoun()} before ${this.setArticle(this.pickNegAdj())} ${this.pickNoun()} ${this.pickVerbThirdPerson()} a ${this.pickNoun()}`
+    let firstNoun = this.setArticle(this.pickPosAdj());
+    return `${firstNoun.replace(`${firstNoun.charAt(0)}`, "A")} but ${this.pickNegAdj()} ${this.pickNoun()} must ${this.pickVerbFirstPerson()} ${this.setArticle(this.pickPosAdj())} ${this.pickNoun()} before ${this.setArticle(this.pickNegAdj())} ${this.pickNoun()} ${this.pickVerbThirdPerson()} ${this.setArticle(this.pickNoun())}`
   };
 }
