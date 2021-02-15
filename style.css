@@ -6,3 +6,5 @@ body {
 }
 
 button {	background-color: black;	color: whitesmoke;	text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
+
+.sub { background-color: black; color: whitesmoke; text-align: center}

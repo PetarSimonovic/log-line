@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var prompt = new Prompt();
-  updateLogLine()
+  updateLogLine("Press Story Mode or Excuse Mode to create a work of fiction")
 
   function updateLogLine(text) {
   $('#logline').text(text);
