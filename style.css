@@ -1,18 +1,7 @@
-.low-usage {
-  color: green;
-}
-
-.medium-usage {
-  color: black;
-}
-
-.high-usage {
-  color: red;
-}
 
 body {
-	width: 100%;
-	max-width: 960px; /* or whatever width you want */
+	width: 800%;
+	max-width: 650px; /* or whatever width you want */
   margin: auto;
 }
 
