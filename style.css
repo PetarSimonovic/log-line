@@ -9,3 +9,11 @@
 .high-usage {
   color: red;
 }
+
+body {
+	width: 100%;
+	max-width: 960px; /* or whatever width you want */
+  margin: auto;
+}
+
+button {	background-color: black;	color: whitesmoke;	text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
