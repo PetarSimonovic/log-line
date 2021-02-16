@@ -5,6 +5,30 @@ body {
   margin: auto;
 }
 
-button {	background-color: black;	color: whitesmoke;	text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
+head {
+	width: 800%;
+	max-width: 650px; /* or whatever width you want */
+  margin: auto;
+	width: 500%;
+	max-width: 500px;
+}
 
-.sub { background-color: black; color: whitesmoke; text-align: center}
+button { margin-top: 3cm; margin-bottom: 3cm; background-color: black;	color: whitesmoke;text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
+
+.justify-three {
+	text-align: justify;
+	margin-top: 3cm;
+  margin-bottom: 3cm;
+	font-family: courier;
+	width: 700%;
+	max-width: 600px; /* or whatever width you want */
+}
+
+.center-three {
+	text-align: center;
+	margin-top: 3cm;
+  margin-bottom: 3cm;
+	font-family: courier;
+	width: 700%;
+	max-width: 600px; /* or whatever width you want */
+}

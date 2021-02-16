@@ -26,7 +26,7 @@ class Prompt {
   };
 
   pickNoun() {
-    let nounBank = ["watch maker", "pond", "frog", "dog", "robot", "android", "computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "electronic musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza"];
+    let nounBank = ["watch maker", "ghost", "ninja", "pond", "frog", "dog", "robot", "android", "computer", "cat", "vampire", "plant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "electronic musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza"];
     let noun = nounBank[this.makeChoice(nounBank)];
     return noun
   };
