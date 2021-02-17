@@ -13,7 +13,7 @@ head {
 	max-width: 500px;
 }
 
-button { margin-top: 3cm; margin-bottom: 3cm; background-color: black;	color: whitesmoke;text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
+button { margin-top: 0.5cm; margin-bottom: 0.5cm; background-color: black;	color: whitesmoke;text-align: center;	text-decoration: none;	font-size: 1em;	display: inline-block;	width: 20%; /* to test the test-align property */}
 
 .justify-three {
 	text-align: justify;
@@ -25,9 +25,20 @@ button { margin-top: 3cm; margin-bottom: 3cm; background-color: black;	color: wh
 }
 
 .center-three {
+	position: relative;
 	text-align: center;
-	margin-top: 3cm;
-  margin-bottom: 3cm;
+	margin-top: 1cm;
+  margin-bottom: 1cm;
+	font-family: courier;
+	width: 700%;
+	max-width: 600px; /* or whatever width you want */
+}
+
+
+.button_center  {
+	text-align: center;
+	margin-top: 0cm;
+  margin-bottom: 0.5cm;
 	font-family: courier;
 	width: 700%;
 	max-width: 600px; /* or whatever width you want */
