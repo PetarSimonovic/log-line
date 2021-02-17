@@ -56,9 +56,9 @@ class Prompt {
   };
 
   setArticle(word) {
-    let vowels = ["a", "e", "i", "o", "u", "honest"]
+    let vowels = ["a", "e", "i", "o", "u"]
     let letter = word.charAt(0)
-    if (vowels.includes(letter)) {
+    if (vowels.includes(letter) || word === "honest") {
       return `an ${word}`
     }
     else {
