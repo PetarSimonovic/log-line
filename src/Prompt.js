@@ -32,19 +32,19 @@ class Prompt {
   };
 
   pickVerbFirstPerson() {
-    let verbBankFP = ["rescue", "thank", "serenade", "create", "teach", "help", "cheer up", "console", "hug", "understand", "vindicate", "defend", "find", "free", "cooperate with", "simulate", "study", "harness", "believe", "launch", "inspire", "enlighten", "hide", "surprise"];
+    let verbBankFP = ["rescue", "thank", "serenade", "create", "help", "cheer up", "console", "hug", "understand", "vindicate", "defend", "find", "free", "cooperate with", "simulate", "harness", "believe", "launch", "inspire", "enlighten", "hide", "surprise", "save", "revive", "cure", "befriend", "liberate", "conjure", "invigorate", "repair"];
     let verbFP = verbBankFP[this.makeChoice(verbBankFP)];
     return verbFP
   };
 
   pickVerbThirdPerson() {
-    let verbBankTP = ["destroys", "ruins", "surrenders to", "breaks", "threatens", "insults", "cajoles", "murders", "robs", "ignores", "fights", "attacks", "hurts", "upsets", "drains", "vandalises", "truncates", "annoys", "swears at", "slaps", "glares at", "intimidates"];
+    let verbBankTP = ["destroys", "surrenders to", "breaks", "threatens", "insults", "cajoles", "murders", "robs", "ignores", "fights", "attacks", "hurts", "upsets", "drains", "vandalises", "truncates", "annoys", "swears at", "slaps", "glares at", "intimidates", "demeans", "belittles", "upsets", "patronises", "slanders", "scorns", "wounds", "offends"];
     let verbTP = verbBankTP[this.makeChoice(verbBankTP)];
     return verbTP
   };
 
   pickVerbPastTense() {
-    let verbBankPast = ["destroyed", "ate", "ruined", "broke", "threatened", "insulted", "cajoled", "attacked", "ignored", "fought", "hurt", "upset", "drained", "vandalised", "truncated", "annoyed", "swore at", "slapped", "glared at", "intimidated"];
+    let verbBankPast = ["destroyed", "ate", "ruined", "broke", "threatened", "insulted", "cajoled", "attacked", "ignored", "fought", "hurt", "upset", "drained", "vandalised", "truncated", "annoyed", "swore at", "slapped", "glared at", "intimidated", "slandered", "snubbed", "upset", "patronised", "offended"];
     let verbPast = verbBankPast[this.makeChoice(verbBankPast)];
     return verbPast
   }
