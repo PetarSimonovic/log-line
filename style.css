@@ -27,11 +27,12 @@ button { margin-top: 0.5cm; margin-bottom: 0.5cm; background-color: black;	color
 .center-three {
 	position: relative;
 	text-align: center;
-	margin-top: 1cm;
+	margin-top: 3cm;
   margin-bottom: 1cm;
 	font-family: courier;
 	width: 700%;
 	max-width: 600px; /* or whatever width you want */
+	height: 150px;
 }
 
 
