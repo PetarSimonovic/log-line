@@ -20,7 +20,7 @@ Use Story Mode to seed your imagination with unthought of scenarios, delivered i
 
 <h3>Excuse Mode</h3>
 
-Use Excuse Mode to generate explanations that can be used to justify aberrant behaviour or justify character flaws. Comes with pre-built excuse scenarios.
+Use Excuse Mode to generate explanations that can be used to justify aberrant behaviour or  character flaws. Comes with pre-built excuse scenarios.
 
 
 - Designed and developed by Petar Simonovic in JavaScript
